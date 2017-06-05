@@ -1,0 +1,30 @@
+{
+  "name": "parse-cloud-debugger",
+  "version": "0.9.0",
+  "description": "Local proxy of Parse.com cloud used for debuging cloud code !",
+  "main": "./src/index.js",
+  "homepage": "https://github.com/mariusciocan/parse-cloud-debugger",
+  "scripts": {
+    "postinstall": "npm install --unsafe-perm -g mailgun mandrill moment sendgrid stripe twilio underscore"
+  },
+  "author": {
+    "name": "Marius Ciocan",
+    "email": "marius.ciocan@axiologic.ro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariusciocan/parse-cloud-debugger.git"
+  },
+  "bugs": {
+    "email": "marius.ciocan@axiologic.ro",
+    "url": "https://github.com/mariusciocan/parse-cloud-debugger/issues"
+  },
+  "dependencies": {
+    "express": "3.1.0",
+    "cors": "^2.7.1",
+    "localStorage": "^1.0.2",
+    "xmlhttprequest": "^1.6.0",
+    "body-parser": "^1.0.2",
+    "request": "^2.53.0"
+  }
+}

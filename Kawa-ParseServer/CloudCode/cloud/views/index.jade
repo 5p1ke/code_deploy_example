@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1= title
+    button(type="button")#reset.btn.btn-warning Reset
+    #parseCalls
+        p.title.
+               Parse Cloud Server
+        #box
+                #resultUser.alert.alert-success
+        #box
+            button(type="button")#b1.btn.btn-primary Call 'hello'
+            #result1.alert.alert-success
+        #box
+            button(type="button")#b2.btn.btn-primary Call 'hello'
+            #result2.alert.alert-success
+
+    #noParseCalls
+        p.title.
+                Your local server
+        i.
+            Will work only locally on your http://localhost:5555 server
+        #box
+            button(type="button")#b3.btn.btn-primary  Call 'hello'
+            #result3.alert.alert-success
+        #box
+            button(type="button")#b4.btn.btn-primary  Call 'hello'
+            #result4.alert.alert-success

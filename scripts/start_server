@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo =====START SCREEN `date`  >> /tmp/install.log
+/usr/bin/screen -dm /usr/bin/npm start --prefix /mnt/data/Kawa-ParseServer/CloudCode
+echo =====+++++STARTED SCREEN `date`  >> /tmp/install.log
